@@ -1,3 +1,5 @@
+import { Lesson } from "./lesson";
+
 export interface Course {
   id: string;
   description: string;
@@ -13,6 +15,10 @@ export interface Course {
 
 export interface LoadAllCoursesResponse {
   payload: Course[];
+}
+
+export interface SearchLessonsResponse {
+  payload: Lesson[];
 }
 
 export function sortCoursesBySeqNo(c1: Course, c2: Course) {
